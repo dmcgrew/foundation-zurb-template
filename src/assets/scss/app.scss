@@ -21,7 +21,6 @@
 @include foundation-label;
 @include foundation-progress-bar;
 @include foundation-slider;
-@include foundation-range-input;
 @include foundation-switch;
 @include foundation-table;
 // Basic components
@@ -63,3 +62,10 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+@import "components/swiper";
+@import "global/global_styles";
+@import "components/screensaver";
+@import "components/home";
+@import "components/nav";
+@import "components/president";

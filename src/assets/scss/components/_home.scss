@@ -1,0 +1,38 @@
+#home, #home_board {width:100%; height:100%; position: absolute; top:0; left:0; opacity: 0; display: none;
+    .decade_grid {display: flex; flex-direction: column; position: absolute; top:5rem; left:27rem;}
+    
+    .decade_grid_row {display: flex;}
+    
+    .decade_grid_row:first-child {margin-left:6rem;}
+    .decade_grid_row:last-child {margin-left:12rem;}
+    
+    .decade {width:rem-calc(225); height:rem-calc(225);  margin:4rem 4rem 0 0; display: flex; justify-content: center; align-content: center; align-items: center; font-size: 3rem; color:#fff; font-weight: 200; opacity: 0; position: relative; background-repeat: no-repeat; background-size: cover; background-position: center center; 
+        
+        sup {font-size: 1.4rem; position: relative; top:-1.3rem;}
+        &:after {position: absolute; top:0; left:0; width:100%; height:100%; background-color: $primary-color; opacity:0.8; content:""; z-index: 1;}
+        
+        &:hover::after {background-color: darken($primary-color, 15%); cursor: pointer;}
+        
+        .year {position: relative; z-index: 2;}
+        
+        &.decade_1900 {background-image:url(../img/1900.jpg);}
+        &.decade_1910 {background-image:url(../img/1910.jpg);}
+        &.decade_1920 {background-image:url(../img/1920.jpg);}
+        &.decade_1930 {background-image:url(../img/1930.jpg);}
+        &.decade_1940 {background-image:url(../img/1940.jpg);}
+        &.decade_1950 {background-image:url(../img/1950.jpg);}
+        &.decade_1960 {background-image:url(../img/1960.jpg);}
+        &.decade_1970 {background-image:url(../img/1970.jpg);}
+        &.decade_1980 {background-image:url(../img/1980.jpg);}
+        &.decade_1990 {background-image:url(../img/1990.jpg);}
+        &.decade_2000 {background-image:url(../img/2000.jpg);}
+        &.decade_2010 {background-image:url(../img/2010.jpg);}
+        &.decade_2020 {background-image:url(../img/2020.jpg);}
+    }
+    
+    
+    .explore {position: absolute; left:6rem; bottom:7rem; width:33rem; font-family: "GothamNarrow-Thin";
+        h1 {font-size:2.5rem; line-height: 120%; margin-bottom:1.5rem;}
+        h2 {font-size: 1.9rem;}
+    }
+} 

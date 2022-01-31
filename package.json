@@ -11,15 +11,17 @@
   "license": "MIT",
   "dependencies": {
     "foundation-sites": "latest",
+    "gsap": "^3.9.1",
     "jquery": "^3.6.0",
     "motion-ui": "latest",
+    "swiper": "^6.1.1",
     "what-input": "^5.2.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.6",
-    "@babel/register": "^7.15.3",
-    "autoprefixer": "^10.3.4",
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/register": "^7.16.9",
+    "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.27.5",
     "fs": "^0.0.1-security",
@@ -40,15 +42,15 @@
     "js-yaml-js-types": "^1.0.0",
     "node-sass": "^6.0.1",
     "panini": "latest",
-    "postcss": "^8.3.11",
+    "postcss": "^8.4.5",
     "postcss-uncss": "^0.17.0",
     "rimraf": "^3.0.2",
     "style-sherpa": "^1.0.2",
     "uncss": "^0.17.3",
     "vinyl-named": "^1.1.0",
-    "webpack": "^5.52.1",
+    "webpack": "^5.66.0",
     "webpack-stream": "^7.0.0",
-    "yargs": "^17.1.1"
+    "yargs": "^17.3.1"
   },
   "repository": {
     "type": "git",

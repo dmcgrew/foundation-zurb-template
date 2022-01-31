@@ -1,0 +1,52 @@
+
+
+.current_president, .president_image {width: rem-calc(700); height:100%; background-size: cover; position: absolute; right:0; top:0; background-position: top center;}
+
+.screensaver .quote {position: absolute; left:8rem; top:20rem; width:58.75rem; font-size: 3.5rem; max-height:41rem; padding-bottom: 10rem; opacity:1; padding-left:2rem; line-height: 125%; /*font-family: "OpenSans-Light";*/
+    //&:before, &:after {display:inline-block; font-size: 8rem; position: relative;}
+    //&:before {content:"\201C"; top:3rem; text-indent: -3rem;}
+    //&:after {content:"\201D"; top:3rem;}
+    
+    sup {display:inline-block; font-size: 11rem; position: relative; font-weight: 200; font-family: "GothamNarrow-Thin";}
+    sup.first{top:5rem; text-indent: -3rem;}
+    sup.last {top:5rem; text-indent: 0;}
+    
+    strong {font-family: "GothamNarrow-Bold";}
+}
+
+.current_president_name {position: absolute; bottom:4.8rem; left:41rem; text-align: right; line-height: 140%;
+    .name {font-size: 2.7rem; font-family: "GothamNarrow-Bold";}
+    .title {font-size: 2rem; line-height:140%; font-family: "GothamNarrow-Thin";}
+}
+
+.touch {position: absolute; bottom:3.5rem; left:0; display: flex;justify-content: center; align-content: center; align-items: center; padding-left:1.5rem; font-size: 0.9rem; font-family: "GothamNarrow-Bold";
+    &:before {content:""; width: 0; height: 0; border-top: 30px solid transparent; border-left: 30px solid $primary-color; border-bottom: 30px solid transparent; left:-1.5rem; position: relative;}
+}
+
+
+#screensaver2 h1 {position: absolute; font-size: 8.4rem; width:55rem; top:22.5rem; left:17rem; line-height: 100%; font-family: "GothamNarrow-Thin";
+    span {font-size: 6rem; font-weight: 600;} 
+}
+
+
+.blue_bar {background-color: $primary-color; position: absolute; top:13.5rem; width:45.6rem; font-size: 3.5rem; padding:0.5rem 0 0.5rem 17rem; color:#fff; z-index: 99999; font-family: "GothamNarrow-Bold";}
+
+#screensaver3 {display: flex; opacity:0; justify-content: center; align-content: center; align-items: center; height:1080px;
+    .presidents_grid{display: flex; flex-wrap: wrap; width:rem-calc(1820);
+        .image {width:calc(1820px/9); height:calc(980px/5);  border:1rem solid $black;  position: relative; opacity:0;}
+        //.photo {opacity:0; position: absolute; top:0; left:0; width:100%; height:100%; background-size: cover;}
+        /*.photo.on {animation: animatePhotos 1s linear forwards; }
+        .photo.on:first-child {z-index: 101;}
+        .photo.on:nth-child(2) {z-index: 102;}
+        .photo.on:nth-child(3) {z-index: 103;}
+        .photo.on:last-child{z-index: 104;}*/
+
+        .photo {background-size: cover;}
+    }
+}
+
+@keyframes animatePhotos {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+

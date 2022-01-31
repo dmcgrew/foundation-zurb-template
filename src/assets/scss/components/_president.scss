@@ -1,0 +1,42 @@
+#view_president {display: none;}
+
+.president_bio {
+    
+    .president_content {opacity:0; transition: opacity 500ms linear;}
+    .president_content.active {opacity:1;}
+    
+    .president_image {height:53rem;}
+    
+    .photo {width: rem-calc(700); height:100%; background-size: cover; position: absolute; right:0; top:0; background-position: top center;}
+    
+    .bio {position: absolute; left:6rem; top:12rem; width:56rem; font-size: 1.3rem;
+        h1 {font-size: 3.7rem; font-family: "GothamNarrow-Bold";}
+        h2 {font-size: 1.9rem; color: $primary-color; font-family: "GothamNarrow-Thin"; margin-bottom: 1rem;}
+    }
+}
+
+.touch.home_btn {bottom:18rem; opacity:1 !important; animation: none;}
+
+.back_decade {position: absolute; left:0; top:0; background-color: #484848; color:#fff; z-index: 10; padding:0.5rem 0.6rem 0.4rem 0.6rem; font-size: 0.7rem; font-family: "GothamNarrow-Bold"; width:auto; margin:0 auto; cursor: pointer;
+    //&:before {content:""; width: 0; height: 0;border-top: 14px solid transparent;border-right: 20px solid #484848;border-bottom: 16px solid transparent; position: absolute; left:-20px; top:0;}
+}
+
+
+//preloading president images
+@media screen {
+	div#preloader {
+		position: absolute;
+		left: -9999px;
+		top:  -9999px;
+		}
+	div#preloader img {
+		display: block;
+		}
+	}
+@media print {
+	div#preloader, 
+	div#preloader img {
+		visibility: hidden;
+		display: none;
+		}
+	}

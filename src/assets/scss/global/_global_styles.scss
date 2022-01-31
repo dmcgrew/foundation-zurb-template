@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'GothamNarrow-XLight';
+  src: url('../fonts/GothamNarrow-XLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamNarrow-Medium';
+  src: url('../fonts/GothamNarrow-Medium.otf') format('opentype');
+}
+
+
+@font-face {
+  font-family: 'GothamNarrow-Bold';
+  src: url('../fonts/GothamNarrow-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamNarrow-Thin';
+  src: url('../fonts/GothamNarrow-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GothamNarrow-Light';
+  src: url('../fonts/GothamNarrow-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Lato-Black';
+  src: url('../fonts/Lato-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+//box everything in to 1920x1080 screen size
+.screen {width:1920px; height:1080px; overflow: hidden; background-color: $black; position: relative; display:none;}
+
+.logo {position: absolute; max-width: rem-calc(120); top:5rem; left:6rem; opacity:0; z-index: 999999; cursor: pointer;}

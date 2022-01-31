@@ -1,0 +1,55 @@
+.nav_area {background-color: #1b75bb; position: absolute; bottom:0; color:#fff; padding-top:2.3rem; width:100%; font-family: "Lato-Regular",sans-serif; opacity:0;}
+
+.nav_area .swiper-container { max-width:85%; margin: 0 auto; padding:0 3rem;
+    img {width:3.2rem; height:3.2rem; opacity: 1; transition: all 100ms ease-in-out;}
+    .year {font-weight: 600; background-color: #1b75bb; width:4.5rem; margin:1.15rem auto 0 auto; position: absolute; left:0; right:0; transition: all 100ms ease-in-out; position: absolute; left:0; right:0; top:2.5rem; font-family: "Lato-Black",sans-serif; white-space: nowrap;}
+   
+    .name {font-size: 0.8rem; margin-top:0.6rem; line-height: 110%; position: absolute; top:5rem; left:0; right:0; transition: all 100ms ease-in-out;}
+    
+    .swiper-wrapper {position: relative; z-index: 3;}
+    
+    .line {height:1px; width:100%; left:0; right:0; background-color:#ffb201; position: absolute; top:4.4rem; content:""; z-index: 2; opacity:1;}
+    
+    &:before {position: absolute; content:""; width:1rem; height:100%; bottom:0; left:0; background-color: #1b75bb; z-index: 100;}
+    &:after {position: absolute; content:""; width:1rem; height:100%; bottom:0; right:0; background-color: #1b75bb; z-index: 100;}
+}
+
+.nav_area .swiper-slide {height:200px; text-align: center; list-style-type: none; position: relative;
+    &.multi .year {font-size: 1rem; line-height: 90%; text-align: center;}
+    &.multi .name {top:6rem;}
+}
+
+.nav_area .swiper-container:not(.touchStart) .swiper-slide-active {
+    img {opacity:0; transition: all 100ms ease-in-out;}
+    .year {font-size: 2.3rem; background-color: transparent; top:-0.5rem;  transition: all 100ms ease-in-out; width:5.5rem; padding-bottom: 1rem; background-color: #1b75bb;}
+    &.multi .year {width:6.5rem; font-size: 2rem; left:-10px; line-height: 110%;}
+    .name {top:5rem;font-weight: 600;}
+}
+
+.ghosted {opacity:0.3; background-size: 77%; background-position: center left; background-repeat: no-repeat;}
+img.ghosted {opacity:0.6;}
+
+.nav_area {
+    .button-next, .button-prev {outline:none; position: absolute; width:1.25rem; height:0.65rem; z-index: 50000; top:6.38rem; background-repeat: no-repeat;}
+    .button-next {right:7.8rem; background-image: url(../img/right.svg);}
+.button-prev {left:8.3rem; background-image: url(../img/left.svg);}
+}
+
+
+
+
+.center-arrow {width:56px; height:70px; position: absolute; left:calc(50% - 28px); top:-1.8rem; background-image: url(../img/downarrow.svg); background-size: contain; background-repeat: no-repeat;}
+
+.logos {
+    img { left:0; right:0; position: absolute; width:100%; }
+    img.logo1905 {height: 2.7rem; top:-4rem; display: none;}
+    img.logo1976 {height: 3.7rem; top:-5rem; display: none;}
+    img.logo1955 {height: 3.7rem; top:-5rem; display: none;}
+    img.logo1980 {height: 3.7rem; top:-5rem; display: none;}
+    img.logo81-86 {height: 2.7rem; top:-4rem; display: none;}
+    img.logo87-91 {height: 2.7rem; top:-4rem; display: none;}
+    img.logo92-02 {height: 2.7rem; top:-4rem; display: none;}
+    img.logo03-13 {height: 1.7rem; top:-3rem; display: none;}
+    img.logo2005 {height: 2.7rem; top:-4rem; display: none;}
+    img.logo_current {height: 2.7rem; top:-4rem; display: none;}
+}
